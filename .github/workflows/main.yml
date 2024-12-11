@@ -17,7 +17,7 @@ jobs:
         run: npm ci
 
       - name: Publish to NPM
-        run: DEBUG=semantic-release:* npx semantic-release
+        run: npx semantic-release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
