@@ -19,5 +19,5 @@ jobs:
       - name: Publish to NPM
         run: DEBUG=semantic-release:* npx semantic-release
         env:
-          NPM_TOKEN: "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"
-          GITHUB_TOKEN: "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"
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
