@@ -16,9 +16,8 @@ jobs:
       - name: Dependency installation
         run: npm ci
 
-      # semantic-release release only from master branch, so do not be worry
       - name: Publish to NPM
-        run: npx semantic-release
+        run: DEBUG=semantic-release:* npx semantic-release
         env:
           NPM_TOKEN: "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"
           GITHUB_TOKEN: "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"
