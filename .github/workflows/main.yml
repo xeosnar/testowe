@@ -16,6 +16,9 @@ jobs:
       - name: Dependency installation
         run: npm ci
 
+      - name: Dependency build
+        run: npm run build
+
       - name: Publish to NPM
         run: npx semantic-release
         env:

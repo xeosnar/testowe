@@ -16,6 +16,10 @@
     "eject": "react-scripts eject",
     "semantic-release": "semantic-release"
   },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
   "eslintConfig": {
     "extends": [
       "react-app",
